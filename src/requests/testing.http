@@ -9,3 +9,23 @@ Content-Type: application/json
   "title": "New Task",
   "description": "New description Task"
 }
+
+### delete task
+DELETE http://localhost:3000/tasks/1
+
+### updating title and description of the task
+PATCH  http://localhost:3000/tasks/1
+Content-Type: application/json
+
+{
+  "title": "Crear cronograma de actividades",
+  "description": "Definir lista de tareas"
+}
+
+### updating status of the task
+PATCH  http://localhost:3000/tasks/1
+Content-Type: application/json
+
+{
+  "status": "DONE"
+}
