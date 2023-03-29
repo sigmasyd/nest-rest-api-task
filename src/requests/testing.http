@@ -1,0 +1,11 @@
+### get tasks
+GET http://localhost:3000/tasks
+
+### creating task
+POST http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+  "title": "New Task",
+  "description": "New description Task"
+}
